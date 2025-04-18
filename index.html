@@ -1,498 +1,411 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aprenda como ganhar dinheiro com Inteligência Artificial, mesmo sem saber programar. Curso simples e prático para iniciantes." />
-  <meta name="keywords" content="Inteligência Artificial, ganhar dinheiro, curso online, IA, sem programação" />
-  <meta property="og:title" content="Ganhe Dinheiro com Inteligência Artificial (Sem Programar)">
-  <meta property="og:description" content="Aprenda como lucrar com IA mesmo sem saber programar. Curso prático e direto ao ponto.">
-  <meta property="og:image" content="https://via.placeholder.com/1000x400.png?text=Ganhe+com+IA+Sem+Programar">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seudominio.com">
-  <title>Trabalhe com Inteligência Artificial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirmação de Acesso - Renda com IA</title>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 30px;
       box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    
-
     .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
     }
 
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .section h2 {
-      color: #fca311;
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-
-    .section p {
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-
-    .depoimentos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .depoimento {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 300px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .depoimento strong {
-      display: block;
-      margin-top: 10px;
-      color: #fca311;
-    }
-
-    .faq {
-      margin-top: 30px;
-    }
-
-    .faq h3 {
-      font-size: 1.2rem;
-      color: #fca311;
-      margin-bottom: 10px;
-    }
-
-    .faq p {
-      color: #bbb;
+    h1 {
+      font-size: 32px;
+      color: #00ffd5;
       margin-bottom: 20px;
     }
 
-    .button {
-      background: linear-gradient(to right, #fca311, #ff7e00);
-      color: #fff;
+    p {
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn-principal {
+      background: linear-gradient(45deg, #00ffd5, #0ff);
+      color: #000;
+      font-weight: bold;
       border: none;
-      padding: 18px 40px;
-      font-size: 1.4rem;
+      padding: 12px 30px;
+      font-size: 18px;
       border-radius: 50px;
       cursor: pointer;
-      text-align: center;
-      display: block;
-      margin: 40px auto 0;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(255, 126, 0, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-      animation: pulsar 1.5s infinite;
-    }
-
-    .button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 20px rgba(255, 126, 0, 0.7);
-      filter: brightness(1.2);
-    }
-
-    @keyframes pulsar {
-      0% {
-        box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 0 0 30px rgba(255, 126, 0, 0.8), 0 0 40px rgba(255, 126, 0, 0.8);
-      }
-
-      50% {
-        box-shadow: 0 0 25px rgba(255, 126, 0, 1), 0 0 35px rgba(255, 126, 0, 1), 0 0 45px rgba(255, 126, 0, 1);
-      }
-
-      100% {
-        box-shadow: 0 0 20px rgba(255, 126, 0, 0.8), 0 0 30px rgba(255, 126, 0, 0.8), 0 0 40px rgba(255, 126, 0, 0.8);
-      }
-    }
-
-    .certificados {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-    }
-
-    .certificado {
-      margin: 0 15px;
-      width: 120px;
-    }
-
-    .certificado img {
+      transition: 0.3s;
+      max-width: 350px;
       width: 100%;
     }
 
-    .autoridade {
-      text-align: center;
-      margin-top: 60px;
-      color: #fca311;
+    .btn-principal:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffd5;
     }
 
-    .autoridade h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .autoridade p {
-      font-size: 1.1rem;
-      color: #ddd;
-    }
-
-    .garantia {
-      text-align: center;
-      background-color: #1f1c2c;
-      padding: 20px;
+    .pix-container {
+      background: #222;
+      border: 2px solid #00ffd5;
       border-radius: 10px;
-      margin-top: 30px;
+      padding: 10px;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto 20px;
     }
 
-    .garantia h3 {
-      color: #fca311;
-      font-size: 1.5rem;
-    }
-
-    .garantia p {
-      color: #bbb;
-      font-size: 1.1rem;
-    }
-
-    form {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    input[type="email"] {
-      padding: 15px;
-      border-radius: 30px;
+    .pix-container input {
+      width: calc(100% - 24px);
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
       border: none;
-      width: 80%;
-      max-width: 400px;
-      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .copy-btn {
+      background-color: #00ffd5;
+      color: #000;
+      font-weight: bold;
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .copy-btn:hover {
+      background: #0ff;
+    }
+
+    .message-copied {
+      color: #00ffd5;
+      font-size: 14px;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .pix-formulario {
+      background: #1a1a1a;
+      border: 1px solid #00ffd5;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 255, 213, 0.1);
+      margin: 0 auto;
+    }
+
+    .pix-formulario h2 {
+      font-size: 20px;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    .pix-formulario input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 12px;
+      background: #2b2b2b;
+      color: #fff;
+    }
+
+    .pix-formulario button {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(90deg, #00ffd5, #00b3a7);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .pix-formulario button:hover {
+      box-shadow: 0 0 12px #00ffd5;
+    }
+
+    .pix-formulario .status {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #aaa;
+    }
+
+    .input-file-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #b32d2d; /* Vermelho suave */
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .input-file-container input[type="file"] {
+      display: none;
+    }
+
+    .input-file-container label {
+      font-size: 18px;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: #ff5c5c; /* Vermelho mais suave */
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-file-container label:hover {
+      background: #ff4c4c;
+    }
+
+    .input-file-container label i {
+      margin-right: 8px;
+    }
+
+    .contact-form select,
+    .contact-form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 12px;
+      background: #2b2b2b;
+      color: #fff;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(90deg, #00ffd5, #0ff);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .contact-form button:hover {
+      box-shadow: 0 0 12px #00ffd5;
+    }
+
+    .tipo-contato-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .tipo-contato-container select {
+      width: 48%;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #2b2b2b;
+      color: #fff;
+      border: none;
     }
   </style>
 </head>
-
 <body>
 
-  <header>
-    <img src="Foto8.png" alt="IA e dinheiro" style="width: 100%; height: auto; display: block;">
-
-  </header>
-<div style="text-align: center; margin-top: 50px;">
-  <a href="#conteudo" class="scroll-button">
-    <span>Descubra Como Funciona</span>
-    <svg width="24" height="24" fill="currentColor" class="icon" viewBox="0 0 24 24">
-      <path d="M12 16.5l-8-8h16l-8 8z"/>
-    </svg>
-  </a>
-</div>
-
-<style>
-  .scroll-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 16px 32px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(135deg, #fca311 0%, #ff5500 100%);
-    border: none;
-    border-radius: 100px;
-    text-decoration: none;
-    box-shadow: 0 0 20px rgba(255, 85, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: pulseGlow 2s infinite ease-in-out;
-  }
-
-  .scroll-button:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 30px rgba(255, 85, 0, 0.8);
-  }
-
-  .scroll-button .icon {
-    transition: transform 0.3s ease;
-  }
-
-  .scroll-button:hover .icon {
-    transform: translateY(3px);
-  }
-
-  @keyframes pulseGlow {
-    0% {
-      transform: scale(1);
-      box-shadow: 0 0 12px rgba(255, 85, 0, 0.4);
-    }
-    50% {
-      transform: scale(1.07);
-      box-shadow: 0 0 28px rgba(255, 85, 0, 0.8);
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: 0 0 12px rgba(255, 85, 0, 0.4);
-    }
-  }
-</style>
-
-
   <div class="container">
+    <h1>Acesso Liberado Apenas para Mentes Visionárias</h1>
+    <p>Você está a um passo de começar a lucrar com a maior revolução tecnológica do século: a Inteligência Artificial. Aqui, você não precisa saber programar. Criamos um método direto, prático e comprovado para gerar renda usando ferramentas que fazem o trabalho por você.
+</p>
+    <p><strong>Confirme seu pagamento abaixo e receba o material exclusivo no seu WhatsApp ou E-mail.</strong></p>
 
-<div id="conteudo">
-  <!-- Aqui começa seu conteúdo -->
-</div>
-
-    <div class="section">
-      <h2>O que você vai aprender?</h2>
-      <p>Você vai descobrir como usar ferramentas de inteligência artificial para ganhar dinheiro criando conteúdos, atendendo empresas, automatizando processos e até mesmo criando produtos digitais — tudo isso com tutoriais simples, mesmo para quem nunca programou.</p>
+    <div class="pix-container">
+      <h3 style="color: #0ff;">Chave Pix</h3>
+      <input type="text" id="chavePix" value="ia.lucrativa.00@gmail.com" readonly>
+      <button class="copy-btn" onclick="copiarChave()">Copiar Chave Pix</button>
+      <p id="message-copied" class="message-copied">Chave Pix copiada!</p>
     </div>
-    
-<section style="background-color: #0b0b0b; padding: 60px 20px; text-align: center; font-family: 'Arial', sans-serif;">
-  <h2 style="background: linear-gradient(#fca311, #fca311, #fca311); -webkit-background-clip: text; color: transparent; font-size: 32px; margin-bottom: 30px;">
-    Descubra o Poder da Inteligência Artificial
-  </h2>
 
-
-
-  <div class="image-container" style="max-width: 600px; margin: auto;">
-    <img src="Foto46.png" alt="Comparação IA x Trabalho" class="fade-in-img" style="width: 100%; border-radius: 20px; border: 2px solid #fca311;" />
+    <button class="btn-principal" onclick="abrirPopup()">CONFIRMAR PAGAMENTO</button>
   </div>
-</section>
-
-<style>
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.fade-in-img {
-  animation: fadeIn 1.5s ease forwards;
-  opacity: 0;
-}
-</style>
-
-    <div class="section">
-      <h2>Por que esse método funciona?</h2>
-      <p>Você não precisa ser técnico. A IA já está sendo usada por iniciantes no Brasil para ganhar de R$ 2.000 a R$ 10.000 por mês. O segredo é saber como aplicar as ferramentas do jeito certo — e isso é o que mostramos no passo a passo.</p>
-    </div>
-
-    <div class="section">
-      <h2>Depoimentos</h2>
-      <div class="depoimentos">
-        <div class="depoimento">
-          "Em menos de uma semana já consegui meus primeiros clientes criando posts com IA. Nunca imaginei!"
-          <strong>— Camila, MG</strong>
+<!-- Início da seção de contato para suporte -->
+<div style="display: flex; justify-content: center; align-items: center; background-color: #f1f1f1; padding: 10px 15px; border-radius: 8px; box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); margin-top: 20px; max-width: 450px; width: 100%; font-family: Arial, sans-serif;">
+    <div style="display: flex; align-items: center;">
+        <!-- Ícone do WhatsApp com link direto -->
+        <a href="https://wa.me/47997564469" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; height: 30px; margin-right: 10px;">
+        </a>
+        <!-- Texto de contato -->
+        <div>
+            <h5 style="margin: 0; font-size: 16px; font-weight: bold; color: #333;">Suporte Exclusivo</h5>
+            <p style="margin: 5px 0; font-size: 12px; color: #555;">Fale diretamente com nosso suporte via WhatsApp. Estamos aqui para ajudar você!</p>
+            <a href="https://wa.me/554797564469" target="_blank" style="display: inline-block; margin-top: 8px; padding: 6px 15px; background-color: #25D366; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">Falar com Suporte</a>
         </div>
-        <div class="depoimento">
-          "Fiz uma apresentação de empresa inteira com IA e ganhei R$ 500 só com isso. Vale muito!"
-          <strong>— Ricardo, SP</strong>
-        </div>
-        <div class="depoimento">
-          "Comecei para ganhar uma renda extra e já estou faturando mais com IA do que no meu emprego."
-          <strong>— Aline, RJ</strong>
-        </div>
-      </div>
     </div>
-
-    <div class="section faq">
-      <h2>Perguntas Frequentes</h2>
-      <h3>Preciso saber programar?</h3>
-      <p>Não! Todo o material é focado em quem não entende nada de programação.</p>
-      <h3>Quanto tempo leva para começar?</h3>
-      <p>Você pode aplicar o que aprende já no primeiro dia. Tem gente que fecha serviço em menos de 24h.</p>
-      <h3>Tenho garantia?</h3>
-      <p>Sim. Você tem 7 dias para testar o conteúdo. Se não curtir, é só pedir reembolso.</p>
-    </div>
-
-    <div class="garantia">
-      <h3>Garantia de Satisfação</h3>
-      <p>Teste o conteúdo por 7 dias. Se não for o que você esperava, devolvemos seu dinheiro sem perguntas.</p>
-    </div>
-
-    <div class="certificados">
-      <div class="certificado">
-        <img src="Foto4.png" alt="SSL Secure">
-      </div>
-      <div class="certificado">
-        <img src="Foto5.png" alt="PayPal">
-      </div>
-      <div class="certificado">
-        <img src="Foto7.png">
-      </div><br>
-    <br>  <!-- BOTÃO PRINCIPAL -->
-
-
-<!-- FORMULÁRIO OCULTO -->
-<div id="formPopup" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
-  <div style="background: #222; padding: 30px; border-radius: 12px; width: 90%; max-width: 400px; text-align: center; color: white; position: relative;">
-    
-    <h2 style="margin-top: 0;">Enviar Comprovante</h2>
-    <p>Escolha como quer receber o conteúdo:</p>
-
-    <select id="tipoContato" style="width: 100%; padding: 10px; margin-bottom: 10px;">
-      <option value="email">E-mail</option>
-      <option value="whatsapp">WhatsApp</option>
-    </select>
-
-    <input id="contato" type="text" placeholder="Seu e-mail ou número com DDD" style="width: 100%; padding: 10px; margin-bottom: 10px;" required>
-
-    <input type="file" id="comprovante" accept="image/*" style="width: 100%; margin-bottom: 10px;" required>
-
-    <button onclick="enviarFormulario()" style="padding: 10px 20px; background-color: #ff6600; color: white; border: none; border-radius: 8px; cursor: pointer;">Enviar</button>
-
-    <div id="animacao" style="display: none; margin-top: 20px;"></div>
-
-    <span onclick="fecharFormulario()" style="position: absolute; top: 10px; right: 15px; cursor: pointer; color: #ff6666;">X</span>
-  </div>
 </div>
+<!-- Fim da seção de
+  <!-- POPUP -->
+  <div class="popup" id="popup">
+    <div class="pix-formulario">
+      <h2>Envie seu Comprovante de Pagamento</h2>
+      <p style="font-size: 14px; color: #ccc; margin-bottom: 20px;">
+        Analisaremos automaticamente se o comprovante é válido. O acesso será liberado em instantes.
+      </p>
 
-<!-- ANIMAÇÃO COM FOGUETE + CONFETES -->
-<script>
-  function abrirFormulario() {
-    document.getElementById("formPopup").style.display = "flex";
-  }
+      <div class="tipo-contato-container">
+        <select id="tipoContato">
+          <option value="email">Receber por E-mail</option>
+          <option value="whatsapp">Receber por WhatsApp</option>
+        </select>
+      </div>
 
-  function fecharFormulario() {
-    document.getElementById("formPopup").style.display = "none";
-  }
+      <input type="text" id="contato" placeholder="Seu contato (prencha corretamente)" required>
+      
+      <div class="input-file-container">
+        <input type="file" id="imageInput" accept="image/*">
+        <label for="imageInput">
+          <i>📂</i>Escolher Arquivo
+        </label>
+      </div>
 
-  function enviarFormulario() {
-    const contato = document.getElementById("contato").value;
-    const arquivo = document.getElementById("comprovante").files[0];
+      <button onclick="verificarComprovante()">Verificar Comprovante</button>
+      <div class="status" id="status">Aguardando envio da imagem.</div>
+      <br>
+      <button style="margin-top: 15px; background: #555;" onclick="fecharPopup()">Fechar</button>
+    </div>
+  </div>
 
-    if (!contato || !arquivo) {
-      alert("Preencha todos os campos e envie o comprovante.");
-      return;
+  <script>
+    function abrirPopup() {
+      document.getElementById("popup").style.display = "flex";
     }
 
-    // Animação
-    const animacao = document.getElementById("animacao");
-    animacao.innerHTML = `
-      <div style="font-size: 50px; animation: boom 0.5s ease-out;">🚀</div>
-      <div style="color: orange; font-size: 24px; font-weight: bold;">Enviado com sucesso!</div>
-      <div style="font-size: 30px;">🎉🎊✨🎉</div>
-    `;
-    animacao.style.display = "block";
+    function fecharPopup() {
+      document.getElementById("popup").style.display = "none";
+    }
 
-    setTimeout(() => {
-      animacao.style.display = "none";
-      fecharFormulario();
-    }, 4000);
-  }
-</script>
+    function copiarChave() {
+      const chavePix = document.getElementById("chavePix");
+      chavePix.select();
+      document.execCommand("copy");
+      document.getElementById("message-copied").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("message-copied").style.display = "none";
+      }, 2000);
+    }
 
-<!-- ANIMAÇÃO EXTRA (opcional) -->
-<style>
-  @keyframes boom {
-    0% { transform: translateY(0); opacity: 0; }
-    50% { transform: translateY(-20px); opacity: 1; }
-    100% { transform: translateY(-40px); opacity: 0; }
-  }
-</style>
+    async function verificarComprovante() {
+      const status = document.getElementById('status');
+      const file = document.getElementById('imageInput').files[0];
 
-    </div>
-<!-- Fonte moderna e limpa do Google -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      if (!file) {
+        status.textContent = "Selecione uma imagem.";
+        status.style.color = "red";
+        return;
+      }
 
-<style>
-  @keyframes pulseMinimal {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
-  }
+      status.textContent = "Aguarde, estamos verificando seu comprovante...";
+      status.style.color = "#fff";
 
-  .titulo-animado {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    color: #FFA726;
-    text-align: center;
-    margin-bottom: 35px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    animation: pulseMinimal 2.5s infinite ease-in-out;
-  }
+      const resizedImage = await reduzirImagem(file, 800);
 
-  .box-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15.5px;
-    line-height: 1.6;
-    color: #fff;
-  }
+      try {
+        const { data: { text } } = await Tesseract.recognize(resizedImage, 'por');
+        const texto = text.toLowerCase();
+        const padroes = [
+          /pix/, /comprovante/,
+          /pagamento (realizado|efetuado|concluído|recebido)/,
+          /chave/, /r?\$ ?\d{1,3}(\.\d{3})*,\d{2}/,
+          /(nubank|itau|caixa|bradesco|santander|banco)/
+        ];
+        const acertos = padroes.filter(r => r.test(texto)).length;
+        if (acertos >= 3) {
+          status.textContent = "Comprovante de Pix identificado!";
+          status.style.color = "green";
+        } else {
+          status.textContent = "Imagem não parece ser um comprovante válido.";
+          status.style.color = "red";
+        }
+      } catch (e) {
+        console.error("Erro:", e);
+        status.textContent = "Erro ao processar. Tente outra imagem.";
+        status.style.color = "red";
+      }
+    }
 
-  .box-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 18px;
-  }
+    function reduzirImagem(file, maxWidth) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          img.src = e.target.result;
+          reader.onload = function (e) {
+  img.onload = function () {
+    const canvas = document.createElement('canvas');
+    const scale = maxWidth / img.width;
+    canvas.width = maxWidth;
+    canvas.height = img.height * scale;
 
-  .caixa {
-    flex: 1;
-    min-width: 270px;
-    padding: 24px;
-    border-radius: 14px;
-    box-shadow: 0 0 15px rgba(255,140,0,0.25);
-  }
-</style>
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    canvas.toBlob(blob => {
+      resolve(blob);
+    }, 'image/jpeg', 0.8);
+  };
+  img.src = e.target.result;
+};
+reader.readAsDataURL(file);
 
-<section style="background-color: #000; color: #fff; padding: 45px 18px;">
-  <div style="max-width: 950px; margin: auto;">
-    <h2 class="titulo-animado">Rotina Cansativa ou Renda Inteligente?</h2>
+        };
+        
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const scale = maxWidth / img.width;
+          canvas.width = maxWidth;
+          canvas.height = img.height * scale;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          canvas.toBlob(blob => {
+            resolve(blob);
+          }, 'image/jpeg', 0.7);
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+  </script>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center;">
-      <div class="caixa" style="background-color: #000; border: 2px solid #FF8C00;">
-        <h3 class="box-title" style="color: #FFA726;">Trabalho Tradicional</h3>
-        <ul class="box-text" style="list-style: none; padding-left: 0; margin: 0;">
-          <li>8h por dia</li>
-          <li>Salário fixo</li>
-          <li>Desgaste emocional</li>
-          <li>Sem liberdade de tempo</li>
-          <li>Depende de chefes e empresas</li>
-        </ul>
-      </div>
-
-      <div class="caixa" style="background: linear-gradient(135deg, #FF8C00, #FF6F00);">
-        <h3 class="box-title" style="color: #fff;">Com IA e Estratégias Certas</h3>
-        <ul class="box-text" style="list-style: none; padding-left: 0; margin: 0;">
-          <li>1h por dia</li>
-          <li>Renda escalável</li>
-          <li>Autonomia total</li>
-          <li>Mais tempo livre</li>
-          <li>Você no controle</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <div class="autoridade">
-      <h2>Aprenda com os melhores especialistas em Inteligência Artificial</h2>
-      <p>Nossa ferramenta é desenvolvido por profissionais com mais de 10 anos de experiência em IA, ajudando milhares de pessoas a começar suas jornadas de sucesso com inteligência artificial.</p>
-    </div>
-
-    <a href="https://conteudosvips.github.io/Renda-inteligente-/" class="button">Comece Agora e Lucre com IA Hoje</a>
-  </div>
-  
 </body>
-
 </html>
